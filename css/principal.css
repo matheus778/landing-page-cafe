@@ -1,0 +1,224 @@
+
+@font-face {
+  font-family: 'fontCafe';
+  src: url('../fonts/AARDC.TTF');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+  position: relative;
+}
+
+.menu{
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.menu-hamburger{
+  display: none;
+  filter: invert();
+}
+
+.menu nav{
+  margin: 0 auto;
+  height: 80px;
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  width: 50px;
+  filter: invert();
+}
+
+.menu nav ul{
+  list-style: none;
+  display: inline-flex;
+}
+
+.menu nav ul li{
+  margin-right: 30px;
+}
+
+
+.menu ul li a{
+  color: white;
+  font-size: 1.4rem;
+  font-family: 'fontCafe';
+  text-decoration: none;
+}
+
+.menu-escondido{
+  position: absolute;
+  top: 0;
+  right: -50%;
+  width: 50%;
+  height: 2000px;
+  background-color: white;
+  z-index: 9999;
+  display: none;
+}
+
+section{
+  padding-top: 20px;
+  width: 100%;
+  max-width: 980px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section .texto h1{
+  font-size: 3rem;
+  line-height: 2.3rem;
+  font-family: 'fontCafe';
+  margin-bottom: 1rem;
+}
+
+section .texto p{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+section img{
+  width: 570px;
+}
+
+main{
+  padding-top: 40px;
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.texto2 h1{
+  font-size: 3rem;
+  font-family: 'fontCafe';
+}
+
+.texto2 p, .texto2 ul{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+.texto2 ul {
+  margin-top: 20px;
+  padding-left: 20px;
+  font-weight: bold;
+}
+
+.card-container{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  border-radius: 3%;
+  width: 270px;
+  height: 270px;
+  cursor: pointer;
+  background-color: var(--background);
+  transition: all 500ms ease;
+}
+
+.card img{
+  border-radius: inherit;
+  width: 100%;
+}
+
+.card h2{
+  text-align: center;
+  font-family: 'fontCafe';
+}
+
+.card:hover{
+  width: 280px;
+}
+
+footer{
+  background-color: var(--primary);
+  height: 44px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+footer div{
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+footer div p, footer div p a{
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+footer div p a:hover{
+  color:rgb(219, 182, 61);
+}
+
+/* responsividade */
+@media(max-width:768px){
+  .menu nav, section, main, .card-container{
+    width: 90%;
+  }
+
+  section{
+    flex-wrap: wrap;
+  }
+
+  section img{
+    width: 100%;
+  }
+
+  .card-container{
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width:1000px){
+  .menu nav, section, main, .card-container{
+    width: 90%;
+  }
+}
+
+@media(max-width:984px){
+  .menu nav, section, main, .card-container{
+    width: 90%;
+  }
+
+  section{
+    flex-wrap: wrap;
+  }
+
+  section img{
+    width: 100%;
+  }
+
+  .card-container{
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 600px){
+  .menu-hamburger{
+    display: initial;
+  }
+
+  .menu nav ul{
+    display: none;
+  }
+}
