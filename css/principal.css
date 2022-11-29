@@ -65,12 +65,15 @@ body{
 
 section{
   padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
   max-width: 980px;
   display: flex;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 5px dashed var(--primary);
+
 }
 
 section .texto h1{
@@ -99,6 +102,7 @@ main{
 
 .texto2 h1{
   font-size: 3rem;
+  margin-bottom: 1rem;
   font-family: 'fontCafe';
 }
 
@@ -120,21 +124,26 @@ main{
   margin: 0 auto;
   padding-top: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .card{
   border-radius: 3%;
-  width: 270px;
-  height: 270px;
+  width: 300px;
   cursor: pointer;
-  background-color: var(--background);
-  transition: all 500ms ease;
+  transition: all 1s ease;
+}
+
+.card:hover{
+  border-radius: 40px;
+  color: var(--primary);
 }
 
 .card img{
   border-radius: inherit;
   width: 100%;
+  height: 100%;
 }
 
 .card h2{
@@ -142,11 +151,8 @@ main{
   font-family: 'fontCafe';
 }
 
-.card:hover{
-  width: 280px;
-}
-
 footer{
+  margin-top: 2rem;
   background-color: var(--primary);
   height: 44px;
   width: 100%;
@@ -164,6 +170,7 @@ footer div p, footer div p a{
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 footer div p a:hover{
